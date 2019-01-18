@@ -1,21 +1,34 @@
+/* 410-600 mobile */
+
+* {
+    font-family: 'Sarabun', sans-serif;
+}
+
 body {
     background-color: black;
     color: lightgray;
     text-align: center;
     max-width: 1200px;
-    /* align- center; somehow */
+    margin: 0px auto;
 }
 
 header {
-    /* height: vh; */
     background-color: #111;
     background-image: url(../img/MellowPark.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: border-box;
     background-size: 100% auto;
-    padding: 10px;
-    
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#profile {
+    width: 150px;
+    height: auto;
+    border-radius: 75px;
+    margin: 0px;
 }
 
 li {
@@ -23,11 +36,27 @@ li {
 }
 
 ul {
-    display: flex;
-    justify-content: space-evenly;
     padding: 0px;
 }
 
-.contact {
-    /* float: right; */
+/* desktop */
+
+@media screen and (min-width: 600px) {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* .wrapper{
+        display: flex;
+        flex-wrap: wrap-reverse; */
+/* na desktop .word i .skills maja byc obok siebie */
+    }
+}
+
+/* background fix */
+
+@media screen and (max-width: 450px) {
+    header {
+        background-size: auto 100%;
+    }
 }
