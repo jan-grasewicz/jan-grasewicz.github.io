@@ -1,8 +1,16 @@
 /* 410-600 mobile */
 
-* {
+/* * {
     font-family: 'Sarabun', sans-serif;
+    box-sizing: border-box; */
 }
+html {
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     background-color: black;
@@ -10,6 +18,9 @@ body {
     text-align: center;
     max-width: 1200px;
     margin: 0px auto;
+
+    /* width: 1200px;
+    max-width: 100%; */
 }
 
 h1 {
@@ -59,18 +70,21 @@ ul {
     .words, .skills {
         width: 50%;
     }
+    /* nie potrzebne? 
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-evenly; */
-    }
-    /* na desktop .word i .skills maja byc obok siebie */
+    } */
 }
 
 /* background fix */
+/*ustawić na koniec 
 
 @media (max-width: 450px) {
     header {
         background-size: auto 100%;
     }
-}
+} */
+
+
+/* linki podświetlone gradientem (powinny byc dwa) */
