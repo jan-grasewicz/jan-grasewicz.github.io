@@ -1,23 +1,20 @@
-/* 410-600 mobile */
-
+/* mobile */
 * {
     font-family: 'Sarabun', sans-serif;
     box-sizing: border-box;
 }
+
 html {}
 *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     background-color: black;
     color: lightgray;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0px auto;
-
-    /* width: 1200px;
-    max-width: 100%; */
 }
 
 header {
@@ -60,10 +57,12 @@ li {
 ul {
     padding: 0px;
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 a:hover{
     text-decoration: underline;
 }
@@ -75,30 +74,20 @@ a:hover{
      width: 80%;
      margin: 0px auto;
  }
- .icon{
-     width: 30px;
 
+ .skillbox{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto auto;
  }
 
-.contact>li{
-    /* info contact rozlozone rowno jak skill i words */
-}
+ .icon{
+     width: 40px;
+ }
 
 /* desktop */
-
 @media (min-width: 600px) {
-    /* ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .words, .skills {
-        width: 50%;
-    } */
-    /* nie potrzebne? 
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    } */
+    /* wait for more content */
 }
 
 /* background fix */ 
@@ -107,6 +96,3 @@ a:hover{
         background-size: auto 100%;
     }
 }
-
-
-/* linki podświetlone gradientem (powinny byc dwa) */
