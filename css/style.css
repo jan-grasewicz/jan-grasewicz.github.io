@@ -71,6 +71,7 @@ a:hover {
 .skillbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10%;
     list-style-type: none;
     padding-left: 0px;
 }
@@ -94,7 +95,7 @@ a:hover {
 
 /* background fix */
 
-@media (max-width: 550px) {
+@media (max-width: 549px) {
     header {
         background-size: auto 100%;
     }
