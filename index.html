@@ -10,78 +10,76 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <title>Jan Grasewicz portfolio</title>
+    <title>Jan Grasewicz Portfolio</title>
   </head>
+
+
   <body>
-    <header>
+    <header class="header">
       <img
-        id="profile"
+        class="header__profile-photo"
         src="img/profile-photo-square.jpg"
-        alt="profile picture"
+        alt="profile photo"
       />
-      <h1>Jan Grasewicz</h1>
-      <ul class="contact-info">
-        <li class="contact-links">
-          linkedIn:<br /><a href="https://www.linkedin.com/in/jan-grasewicz/"
-            >jan-grasewicz</a
-          >
-        </li>
-        <li class="contact-links">e-mail:<br />j.grasewicz@gmail.com</li>
-        <li class="contact-links">
-          github:<br /><a href="https://github.com/jan-grasewicz"
-            >jan-grasewicz</a
-          >
-        </li>
-      </ul>
+      <h1 class="header__name">Jan Grasewicz</h1>
+      <address class="header__contact-info">
+        <p class="header__contact-info__contact">linkedIn:<br /><a href="https://www.linkedin.com/in/jan-grasewicz/"
+          >jan-grasewicz</a
+        ></p>
+        <p class="header__contact-info__contact">e-mail:<br />j.grasewicz@gmail.com</p>
+        <p class="header__contact-info__contact"> github:<br /><a href="https://github.com/jan-grasewicz"
+          >jan-grasewicz</a
+        ></p>
+      </address>
     </header>
-    <main class="wrapper">
-      <div class="words">
+    <main class="content">
+      <section class="about-me">
         <h2>About me</h2>
         <p>
           I'm intrested in bicycles and cars. Not only riding one but also the
           mechanics of them. My hobby went in line with my job for a few year as
           I worked in bike repair shop. Now it's time for a change and I've
-          started learning front-end development in hope for a new hobby and a
+          started my adventure with front-end development in hope for a new hobby and a
           job that goes in line with it.
         </p>
-      </div>
-      <div class="portfolio">
+      </section>
+      <section class="portfolio">
         <h2>Portfolio</h2>
-        <div class="portfolio-team">
+        <section class="portfolio__subsection">
           <h3>Team work</h3>
-          <ul>
-            <li class="">
+          <ul class="portfolio__subsection__list">
+            <li>
               <img
                 class="portfolio-img"
                 src="img/portfolio/Brewio-page.png"
                 alt="Brewio page"
               />
             </li>
-            <li class=""> <img
+            <li> <img
                 class="portfolio-img"
                 src="img/portfolio/Brewio-game.png"
-                alt="Brewio page"
+                alt="Brewio game"
               /></li>
-            <li class=""> <img
+            <li> <img
                 class="portfolio-img"
                 src="img/portfolio/Brewio-app.png"
-                alt="Brewio page"
+                alt="Brewio app"
               /></li>
           </ul>
-        </div>
-        <!-- <div class="portfolio-personal">
+        </section>
+        <!-- <section class="portfolio__subsection">
           <h3>Personal</h3>
           <ul>
             <li class=""></li>
           </ul>
-        </div> -->
-      </div>
-      <div class="skills">
+        </section> -->
+      </section>
+      <section class="skills">
         <h2>Skills</h2>
-        <ul class="skillbox">
+        <ul class="skills__list">
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/html-icon.png"
               alt="html logo"
             />
@@ -89,7 +87,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/css-icon.png"
               alt="css logo"
             />
@@ -97,7 +95,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/js-icon.png"
               alt="JavaScript logo"
             />
@@ -105,7 +103,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/react-icon.png"
               alt="react logo"
             />
@@ -113,7 +111,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/redux-icon.png"
               alt="redux logo"
             />
@@ -121,7 +119,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/git-icon.png"
               alt="git logo"
             />
@@ -129,7 +127,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/firebase-icon.png"
               alt="firebase logo"
             />
@@ -137,7 +135,7 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/scrum-icon.png"
               alt="scrum logo"
             />
@@ -145,14 +143,14 @@
           </li>
           <li>
             <img
-              class="icon"
+              class="skill-icon"
               src="img/skill-icons/jira-icon.png"
               alt="jira logo"
             />
             <p>Jira</p>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
   </body>
 </html>

@@ -13,40 +13,9 @@ body {
     margin: 0px auto;
 }
 
-header {
-    background-color: #111;
-    background-image: url(../img/MellowPark.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-origin: border-box;
-    background-size: 100% auto;
-    padding: 0px;
-    margin: 0px;
-}
-
-#profile {
-    width: 150px;
-    height: auto;
-    border-radius: 75px;
-    margin: 4% 0px 0px 0px;
-}
-
-h1 {
-    font-size: 45px;
-    margin: 2% auto;
-    text-shadow: 0px 2px 15px black;
-}
-
-.contact-info {
-    padding-bottom: 2%;
-    padding-left: 0px;
-    margin: 0px;
+ul{
     list-style-type: none;
-}
-
-.contact-links {
-    margin: 1.5% 0;
-    text-shadow: 0px 2px 2px black;
+    padding-left: 0px;
 }
 
 a {
@@ -58,36 +27,80 @@ a:hover {
     text-decoration: underline;
 }
 
-.words {
-    width: 80%;
+.header {
+    background-color: #111;
+    background-image: url(../img/MellowPark.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: border-box;
+    background-size: 100% auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header__profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 75px;
+    margin: 4% 0px 0px 0px;
+}
+
+.header__name {
+    font-size: 45px;
+    margin: 2% auto;
+    text-shadow: 0px 2px 15px black;
+}
+
+.header__contact-info {
+    padding-bottom: 2%;
+    margin: 0px;
+    font-style: normal;
+}
+
+.header__contact-info__contact{
+    
+    margin: 1.5% 0;
+    text-shadow: 0px 2px 2px black;
+}
+
+.content{
+    width: 90%;
     margin: 0px auto;
 }
 
-.skills{
-    width: 80%;
-    margin: 0px auto;
+.portfolio__subsection{
+    text-align: center;
 }
 
-.skillbox {
+.portfolio__subsection__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-img{
+
+}
+
+
+.skills__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 10%;
-    list-style-type: none;
-    padding-left: 0px;
 }
 
-.icon {
+.skill-icon {
     height: 50px;
 }
 
 /* desktop */
 
 @media (min-width: 550px) {
-    .contact-info {
+    .header__contact-info {
         display: flex;
         justify-content: center;
     }
-    .contact-links {
+    .header__contact-info__contact {
         width: 35%;
         margin-bottom: 0px;
     }
@@ -96,7 +109,7 @@ a:hover {
 /* background fix */
 
 @media (max-width: 549px) {
-    header {
+    .header {
         background-size: auto 100%;
     }
 }
