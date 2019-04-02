@@ -1,2 +1,2 @@
-# jan-grasewicz.github.io
-my personal page
+# My Portfolio
+https://jan-grasewicz.github.io/
