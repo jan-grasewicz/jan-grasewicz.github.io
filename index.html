@@ -1,48 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Jan Grasewicz portfolio</title>
-</head>
-<body>
-    <header>
-        <img id="profile" src="img/profile-photo-square.jpg" alt="profile picture"> 
-        <h1>Jan Grasewicz</h1>
-        <ul class="contact-info">
-            <li class="contact-links">linkedIn:<br><a href="https://www.linkedin.com/in/jan-grasewicz/">jan-grasewicz</a></li>
-            <li class="contact-links">e-mail:<br>j.grasewicz@gmail.com</li>
-            <li class="contact-links">github:<br><a href="https://github.com/jan-grasewicz">jan-grasewicz</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Jan Grasewicz Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        class="header__profile-photo"
+        src="img/profile-photo-square.jpg"
+        alt="profile photo"
+      />
+      <h1 class="header__name">Jan Grasewicz</h1>
+      <address class="header__contact-info">
+        <p class="header__contact">
+          linkedIn:<br /><a href="https://www.linkedin.com/in/jan-grasewicz/"
+            >jan-grasewicz</a
+          >
+        </p>
+        <p class="header__contact">e-mail:<br />j.grasewicz@gmail.com</p>
+        <p class="header__contact">
+          github:<br /><a href="https://github.com/jan-grasewicz"
+            >jan-grasewicz</a
+          >
+        </p>
+      </address>
     </header>
-    <main class="wrapper">
-        <div class="words">
-            <h2>About me</h2>
-                <p>I'm intrested in bicycles and cars. Not only riding one 
-                but also the mechanics of them. My hobby went in line 
-                with my job for a few year as I worked in bike repair shop.
-                Now it's time for a change and I've started learning 
-                front-end development in hope for a new hobby and 
-                a job that goes in line with it.</p>
-        </div>
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul class="skillbox">
-                <li><img class="icon" src="img/skill-icons/html-icon.png" alt="html logo"><p>HTML</p></li>
-                <li><img class="icon" src="img/skill-icons/css-icon.png" alt="css logo"><p>CSS</p></li>
-                <li><img class="icon" src="img/skill-icons/js-icon.png" alt="JavaScript logo"><p>JavaScript</p></li>
-                <li><img class="icon" src="img/skill-icons/react-icon.png" alt="react logo"><p>React</p></li>
-                <li><img class="icon" src="img/skill-icons/redux-icon.png" alt="redux logo"><p>Redux</p></li>
-                <li><img class="icon" src="img/skill-icons/git-icon.png" alt="git logo"><p>Git</p></li>
-                <li><img class="icon" src="img/skill-icons/firebase-icon.png" alt="firebase logo"><p>Firebase</p></li>
-                <li><img class="icon" src="img/skill-icons/scrum-icon.png" alt="scrum logo"><p>Scrum</p></li>
-                <li><img class="icon" src="img/skill-icons/jira-icon.png" alt="jira logo"><p>Jira</p></li>
-                
-            </ul>
+    <main class="content">
+      <section class="about-me">
+        <h2>About me</h2>
+        <p>
+          I'm intrested in bicycles and cars. Not only riding one but also the
+          mechanics of them. My hobby went in line with my job for a few year as
+          I worked in bike repair shop. Now it's time for a change and I've
+          started my adventure with front-end development in hope for a new
+          hobby and a job that goes in line with it.
+        </p>
+      </section>
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+         <!-- <section>
+          <h3>Personal</h3>
+          <ul>
+            <li class=""></li>
+          </ul>
+        </section> -->
+        <section>
+          <h3>Team work</h3>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a
+                href="https://infoshareacademy.github.io/jfdd11-hs/"
+                target="_blank"
+              >
+                <img
+                  class="portfolio__img portfolio__img--brewio"
+                  src="img/portfolio/Brewio-page.png"
+                  alt="Brewio page"
+              /></a>
+            </li>
+            <li class="portfolio__item portfolio__item--odd">
+              <a
+                href="https://infoshareacademy.github.io/jfdd11-hs/game/index.html"
+                target="_blank"
+              >
+                <img
+                  class="portfolio__img portfolio__img--brewio"
+                  src="img/portfolio/Brewio-game.png"
+                  alt="Brewio game"
+              /></a>
+            </li>
+            <li class="portfolio__item">
+              <a href="http://app.hs.jfdd11.is-academy.pl/" target="_blank">
+                <img
+                  class="portfolio__img portfolio__img--brewio"
+                  src="img/portfolio/Brewio-app.png"
+                  alt="Brewio app"
+                />
+              </a>
+            </li>
+           
+          </ul>
+        </section>
+       
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul class="skills__list">
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/html-icon.png"
+              alt="html logo"
+            />
+            <p>HTML</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/css-icon.png"
+              alt="css logo"
+            />
+            <p>CSS</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/js-icon.png"
+              alt="JavaScript logo"
+            />
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/react-icon.png"
+              alt="react logo"
+            />
+            <p>React</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/redux-icon.png"
+              alt="redux logo"
+            />
+            <p>Redux</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/git-icon.png"
+              alt="git logo"
+            />
+            <p>Git</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/firebase-icon.png"
+              alt="firebase logo"
+            />
+            <p>Firebase</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/scrum-icon.png"
+              alt="scrum logo"
+            />
+            <p>Scrum</p>
+          </li>
+          <li>
+            <img
+              class="skills__icon"
+              src="img/skill-icons/jira-icon.png"
+              alt="jira logo"
+            />
+            <p>Jira</p>
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
+  </body>
 </html>
